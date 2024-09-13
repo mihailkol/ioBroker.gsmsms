@@ -517,6 +517,19 @@
         "desc": "compelete message info - stringified json"
       },
       "native": {}
+    },
+        {
+      "_id": "inbox.incomingCall",
+      "type": "state",
+      "common": {
+        "name": "incoming call",
+        "type": "string",
+        "role": "json",
+        "read": true,
+        "write": false,
+        "desc": "compelete message info - stringified json"
+      },
+      "native": {}
     }
   ]
 }
