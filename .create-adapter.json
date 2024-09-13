@@ -2,7 +2,7 @@
 	"cli": true,
 	"target": "directory",
 	"adapterName": "gsmsms",
-	"title": "GSM-SMS",
+	"title": "GSM-SMScall",
 	"description": "Send and recieve SMS with GSM-hardware",
 	"keywords": [
 		"SMS",
