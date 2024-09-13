@@ -22,7 +22,7 @@ let port;
 
 let autoDeleteOnReceive = false;
 let enableConcatenation = true;
-let incomingCallIndication = false;
+let incomingCallIndication = true;
 let incomingSMSIndication = true;
 let pin = '';
 let customInitCommand = '';
@@ -278,13 +278,13 @@ class Gsmsms extends utils.Adapter {
 
     ///incomingCall auf false als standard!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    /*
+    
             gsmModem.on('onNewIncomingCall', data => {
               //whole message data
               this.log.debug(`Event Incoming Call: ` + JSON.stringify(data));
             });
 
-    */
+    
 
     //löschen bei Empfang auf standard  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
