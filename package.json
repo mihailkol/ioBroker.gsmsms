@@ -1,5 +1,5 @@
 {
-  "name": "iobroker.gsmsms",
+  "name": "iobroker.gsmsmscall",
   "version": "0.0.6",
   "description": "Send and recieve SMS with GSM-hardware",
   "author": {
