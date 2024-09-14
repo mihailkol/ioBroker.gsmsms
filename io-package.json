@@ -83,17 +83,17 @@
       }
     },
     "titleLang": {
-      "en": "GSM-SMS",
-      "de": "GSM-SMS",
-      "ru": "GSM-SMS",
-      "pt": "GSM-SMS",
-      "nl": "GSM-SMS",
-      "fr": "GSM-SMS",
-      "it": "GSM-SMS",
-      "es": "GSM-SMS",
-      "pl": "GSM-SMS",
+      "en": "GSM-SMS-Call",
+      "de": "GSM-SMS-Call",
+      "ru": "GSM-SMS-Call",
+      "pt": "GSM-SMS-Call",
+      "nl": "GSM-SMS-Call",
+      "fr": "GSM-SMS-Call",
+      "it": "GSM-SMS-Call",
+      "es": "GSM-SMS-Call",
+      "pl": "GSM-SMS-Call",
       "zh-cn": "GSM-短信",
-      "uk": "GSM-SMS"
+      "uk": "GSM-SMS-Call"
     },
     "desc": {
       "en": "Send and recieve SMS with GSM-hardware",
