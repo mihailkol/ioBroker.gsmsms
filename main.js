@@ -68,7 +68,7 @@ var reinitialize = {
 
 //var highWaterMark = 16384; Prüfen ob als 'option'nötig:  The size of the read and write buffers defaults to 16k. |
 
-class Gsmsms extends utils.Adapter {
+class Gsmsmscall extends utils.Adapter {
 
   /**
    * @param {Partial<utils.AdapterOptions>} [options={}]
@@ -76,7 +76,7 @@ class Gsmsms extends utils.Adapter {
   constructor(options) {
     super({
       ...options,
-      name: 'gsmsms',
+      name: 'gsmsmscall',
     });
     this.on('ready', this.onReady.bind(this));
     this.on('stateChange', this.onStateChange.bind(this));
@@ -122,7 +122,7 @@ class Gsmsms extends utils.Adapter {
     // Here we have the log in "logObject" and can handle it accordingly.
     // LogObject: {from:'testlog.0', message: 'testlog.0 (12504) adapter disabled', severity: 'error', ts:1585413238439}
 
-    if (logObject.severity == 'debug' && logObject.from == 'gsmsms.' + this.instance && logObject.message.includes('RSSI') == true) {
+    if (logObject.severity == 'debug' && logObject.from == 'gsmsmscall.' + this.instance && logObject.message.includes('RSSI') == true) {
       //this.log.info("RSSI - Message:" + logObject.message);
       var sigQual = logObject.message.slice(-2);
       this.log.info("RSSI - NEW:" + sigQual);
@@ -909,7 +909,7 @@ class Gsmsms extends utils.Adapter {
   // 	}
   // }
 
-} //end Class Gsmsms
+} //end Class Gsmsmscall
 
 
 
@@ -918,8 +918,8 @@ if (require.main !== module) {
   /**
    * @param {Partial<utils.AdapterOptions>} [options={}]
    */
-  module.exports = (options) => new Gsmsms(options);
+  module.exports = (options) => new Gsmsmscall(options);
 } else {
   // otherwise start the instance directly
-  new Gsmsms();
+  new Gsmsmscall();
 }
