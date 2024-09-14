@@ -527,7 +527,7 @@
         "role": "json",
         "read": true,
         "write": false,
-        "desc": "compelete message info - stringified json"
+        "desc": "compelete call info - stringified json"
       },
       "native": {}
     }
