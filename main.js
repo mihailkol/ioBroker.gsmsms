@@ -282,7 +282,7 @@ class Gsmsmscall extends utils.Adapter {
             gsmModem.on('onNewIncomingCall', data => {
               //whole message data
               this.log.debug(`Event Incoming Call: ` + JSON.stringify(data));
-              this.setState('inbox.incomingCall', '+' + JSON.stringify(data), true);
+              this.setState('inbox.incomingCall', '+' + data, true);
             });
 
     
