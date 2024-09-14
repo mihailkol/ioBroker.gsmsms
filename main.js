@@ -31,7 +31,7 @@ let cnmiModemClosed = '';
 let getSignalQuality = false;
 let pollinginterval = 30;
 
-let baudRate = 19200;
+let baudRate = 9600;
 let dataBits = 8;
 let stopBits = 1;
 let parity = 'none';
